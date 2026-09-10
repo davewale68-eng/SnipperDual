@@ -4574,19 +4574,19 @@
 
       const setEl = (id, val) => {
         const el = document.getElementById(id);
-        if (el) el.innerText = val != null ? val : '''—''';
+        if (el) el.innerText = val != null ? val : '—';
       };
 
-      setEl('''fshaAvgPerColor''',      lt.avgPerColorHits != null ? lt.avgPerColorHits : '''—''');
-      setEl('''fshaLifetimeCalls''',    lt.totalEnterCalls != null ? lt.totalEnterCalls : '''—''');
-      setEl('''fshaLifetimeAvgColor''', lt.avgPerColorHits != null ? lt.avgPerColorHits : '''—''');
+      setEl('fshaAvgPerColor',      lt.avgPerColorHits != null ? lt.avgPerColorHits : '—');
+      setEl('fshaLifetimeCalls',    lt.totalEnterCalls != null ? lt.totalEnterCalls : '—');
+      setEl('fshaLifetimeAvgColor', lt.avgPerColorHits != null ? lt.avgPerColorHits : '—');
 
       // Color-code avg per-color hits
-      const pcEl = document.getElementById('''fshaAvgPerColor''');
+      const pcEl = document.getElementById('fshaAvgPerColor');
       if (pcEl && lt.avgPerColorHits != null) {
-        pcEl.style.color = lt.avgPerColorHits >= 1.5 ? '''var(--color-green)'''
-          : lt.avgPerColorHits >= 0.8 ? '''var(--color-gold)'''
-          : '''var(--color-red)''';
+        pcEl.style.color = lt.avgPerColorHits >= 1.5 ? 'var(--color-green)'
+          : lt.avgPerColorHits >= 0.8 ? 'var(--color-gold)'
+          : 'var(--color-red)';
       }
     }
 
