@@ -1,0 +1,16 @@
+{
+  "name": "sniper-v4-pro",
+  "version": "6.2.0",
+  "description": "SNIPER_V4 PRO — Autonomous Parliamentary Intelligence Platform with Meta-Intelligence Layer, Regime-Aware Coalition Analysis, Direct Evaluation, and Vector Signature Clustering",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsdom": "^30.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
